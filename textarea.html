@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<script>
+    function Gonder() {
+        YaziKutusu = document.getElementById("YaziKutusu").value;
+        //alert(Metin);
+        ChatEkrani = document.getElementById("ChatEkrani").innerHTML;
+        //alert(ChatEkrani);
+        
+        document.getElementById("ChatEkrani").innerHTML = ChatEkrani + '\n' + YaziKutusu;
+        document.getElementById("YaziKutusu").value='';
+    }
+</script>
+    
+<fieldset style="width:200px">
+<pre id="ChatEkrani" style="overflow: auto; height: 200px;">
+Merhaba
+                    Merhaba
+                    Nasılsın?
+İyiyim.                    
+</pre>
+</fieldset>
+<form>
+    <textarea name="yazi_kutusu" id="YaziKutusu" cols="32" rows="3" placeholder="Buraya birşeyler yazın."></textarea>
+    <br>
+    <button type="reset">
+        Temizle
+    </button>
+    <button type="button" onclick="Gonder()">
+        <image src="resimler/buton1.webp" width="45" height="10" />
+    </button>
+</form>
+    
+    
+</body>
+</html>
